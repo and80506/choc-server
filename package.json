@@ -1,5 +1,5 @@
 {
-  "name": "tiny-static-server",
+  "name": "choc-server",
   "version": "0.3.0",
   "description": "node tinyServer.js 8000 ~/Downloads/",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "example": "example"
   },
   "bin": {
-    "server": "bin/server.js",
+    "choc-server": "bin/choc-server.js",
     "exec": "bin/exec.js"
   },
   "scripts": {
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/and80506/tiny-static-server/issues"
   },
-  "homepage": "https://github.com/and80506/tiny-static-server#readme"
+  "homepage": "https://github.com/and80506/tiny-static-server#readme",
+  "dependencies": {}
 }
