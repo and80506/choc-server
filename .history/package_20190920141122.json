@@ -1,0 +1,25 @@
+{
+    "name": "tiny-static-server",
+    "version": "0.3.0",
+    "description": "node tinyServer.js 8000 ~/Downloads/",
+    "main": "index.js",
+    "directories": {
+      "example": "example"
+    },
+    "bin": {
+        "stencil": "bin/stencil"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/and80506/tiny-static-server.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/and80506/tiny-static-server/issues"
+    },
+    "homepage": "https://github.com/and80506/tiny-static-server#readme"
+  }

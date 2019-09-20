@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+'use strict';
+
+var createServer = require('../index.js');
+
+var PORT = process.argv[2] || 8000;
+// 静态资源文件目录
+var DIR = process.argv[3] || "";
+
+var port;
+var dir;
+process.argv.forEach((val, index) => {
+    var splited = val.split('=');
+    if ( splited[0] === 'port' ) {
+
+    }
+
+    if ( splited[0] === 'dir' ) {
+        
+    }
+});
+
+createServer(port, dir);
