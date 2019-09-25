@@ -13,3 +13,6 @@ npx choc-server dir=~/Downloads/ port=8080
 # exec remote script, make sure it is exist
 node node_modules/.bin/exec url=http://localhost:8080/index.js
 ```
+
+## choc-server VS http-server
+<img alt="vs http-server" src="https://qiyukf.nosdn.127.net/urchin/screen.jpg" />
