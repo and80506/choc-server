@@ -1,5 +1,5 @@
 # How to use
-
+Choc-server is a local development tool, include dictorey listing、local server starting.
 ## create static server
 ```
 # create static server, use process.cwd() as default
