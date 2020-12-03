@@ -75,8 +75,17 @@ function createServer(port, dir) {
                     }
                     var responseContent = '';
                     files.forEach((file) => {
+                        var showFileName = file;
+                        if (fs.lstatSync(path.resolve(filename, file)).isDirectory()) {
+                            showFileName += '/';
+                        }
                         responseContent +=
-                            '<li><a href="' + request.url + file + '">' + file + '</a></li>';
+                            '<li><a href="' +
+                            request.url +
+                            showFileName +
+                            '">' +
+                            showFileName +
+                            '</a></li>';
                     });
                     response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
                     response.write('Directory:<ul>' + responseContent + '</ul>');
