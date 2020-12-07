@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
-var path = require('path');
-var createServer = require('../index.js');
+var createServer = require('../src/index.js');
 var params = {};
 process.argv.forEach((val, index) => {
     var splited = val.split('=');
-    ['port', 'dir'].forEach(function (key) {
+    ['port', 'root'].forEach(function (key) {
         if (splited[0] === key) {
             params[key] = splited[1];
         }
@@ -16,7 +15,10 @@ process.argv.forEach((val, index) => {
 if (!params.port) {
     params.port = 8000;
 }
-if (!params.dir) {
-    params.dir = process.cwd();
+if (!params.root) {
+    params.root = process.cwd();
 }
-createServer(Number(params.port), params.dir);
+createServer({
+    port: Number(params.port),
+    root: params.root,
+});

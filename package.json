@@ -1,27 +1,39 @@
 {
   "name": "choc-server",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "description": "tiny static server can handle Content-Type with \"text/css\"、\"text/html\"、\"image/png\"  ",
-  "main": "index.js",
+  "keywords": [
+    "static",
+    "server",
+    "local",
+    "assets"
+  ],
+  "main": "src/index.js",
   "directories": {
     "example": "example"
   },
   "bin": {
-    "choc-server": "bin/choc-server.js",
-    "exec": "bin/exec.js"
+    "choc-server": "bin/choc-server.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/and80506/choc-server.git"
   },
-  "author": "",
+  "author": "Andy Wu <and80506@163.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/and80506/choc-server/issues"
   },
   "homepage": "https://github.com/and80506/choc-server#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^8.2.1"
+  }
 }
