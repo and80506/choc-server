@@ -7,7 +7,7 @@ var types = {
     'application/epub+zip': ['epub'],
     'application/gzip': ['gz'],
     'application/java-archive': ['jar'],
-    'application/json': ['json'],
+    'application/json': ['json', 'map'],
     'application/ld+json': ['jsonld'],
     'application/msword': ['doc'],
     'application/octet-stream': ['bin'],
