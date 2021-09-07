@@ -1,6 +1,6 @@
 {
   "name": "choc-server",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "tiny static server can handle Content-Type with \"text/css\"、\"text/html\"、\"image/png\"  ",
   "keywords": [
     "static",
